@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="band-form">
+
+        <div id="form-wrapper">
+
+            <div class="form-item">
+                <label for="name">Band:</label>
+                <input type="text" id="name">
+            </div>
+                
+            <div class="form-item">
+                <label for="members">Members:</label>
+                <input type="text" id="members">
+            </div>
+
+            <div class="form-item">
+                <label for="genre">Genre:</label>
+                <select name="genre" id="genre">
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="indie">Indie</option>
+                    <option value="electronic">Electronic</option>
+                </select>    
+            </div>
+
+            <div class="form-item">
+                <label for="album">Album:</label>
+                <input type="text" id="album">
+            </div>
+
+            <div class="form-item">
+                <label for="songs">Songs:</label>
+                <input type="text" id="songs">
+            </div>
+    
+        </div>
+        
+        <input type="submit" value="save">
+
+    </form>
+
+    <button id="delete-all">Delete All</button>
+   
+    <h1>Bands</h1>
+
+        <ul id="band-list"></ul>
+
+</body>
+</html>
