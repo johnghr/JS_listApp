@@ -28,6 +28,18 @@ const createBandListItem = function (form) {
     bandMembers.textContent = form.members.value;
     bandListItem.appendChild(bandMembers);
 
+    const bandActive = document.createElement('p');
+    let checkBoxResult = function () {
+        if (form.active.checked === true) {
+            return "This band is active";
+        } else {
+            return "This band is inactive";
+        };
+    };
+    let result = checkBoxResult()
+    bandActive.textContent = result
+    bandListItem.appendChild(bandActive); 
+
     const bandGenre = document.createElement('p')
     bandGenre.textContent = form.genre.value;
     bandListItem.appendChild(bandGenre);
