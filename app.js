@@ -24,6 +24,9 @@ const createBandListItem = function (form) {
     bandName.textContent = form.name.value;
     bandListItem.appendChild(bandName);
 
+    const horizontalLine = document.createElement('hr');
+    bandListItem.appendChild(horizontalLine);
+
     const bandMembers = document.createElement('p');
     bandMembers.textContent = form.members.value;
     bandListItem.appendChild(bandMembers);
@@ -31,9 +34,9 @@ const createBandListItem = function (form) {
     const bandActive = document.createElement('p');
     let checkBoxResult = function () {
         if (form.active.checked === true) {
-            return "This band is active";
+            return "Active: yes";
         } else {
-            return "This band is inactive";
+            return "Active: no";
         };
     };
     let result = checkBoxResult()
@@ -43,6 +46,9 @@ const createBandListItem = function (form) {
     const bandGenre = document.createElement('p')
     bandGenre.textContent = form.genre.value;
     bandListItem.appendChild(bandGenre);
+
+    const horizontalLineTwo = document.createElement('hr');
+    bandListItem.appendChild(horizontalLineTwo);
 
     const album = document.createElement('h3');
     album.textContent = form.album.value;

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -21,21 +23,21 @@
                 
             <div class="form-item">
                 <label for="members">Members:</label>
-                <input type="text" id="members">
+                <textarea name="members" id="members" cols="15" rows="8"></textarea>
             </div>
 
-            <div class="form-item">
-                <label for="active">Active:</label>
-                <input type="checkbox" name="active" id="active" checked>
+            <div class="active">
+                <label class="active" for="active">Active:</label>
+                <input class="active" type="checkbox" name="active" id="active" checked>
             </div>
 
             <div class="form-item">
                 <label for="genre">Genre:</label>
                 <select name="genre" id="genre">
-                    <option value="rock">Rock</option>
-                    <option value="pop">Pop</option>
-                    <option value="indie">Indie</option>
-                    <option value="electronic">Electronic</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Indie">Indie</option>
+                    <option value="Electronic">Electronic</option>
                 </select>    
             </div>
 
@@ -46,20 +48,24 @@
 
             <div class="form-item">
                 <label for="songs">Songs:</label>
-                <input type="text" id="songs">
+                <textarea name="songs" id="songs" cols="15" rows="8"></textarea>
             </div>
     
         </div>
         
-        <input type="submit" value="save">
+        <input class="button" type="submit" value="save">
 
     </form>
 
-    <button id="delete-all">Delete All</button>
+    <hr>
+
+    
    
     <h1>Bands</h1>
 
         <ul id="band-list"></ul>
+    
+        <button class="button" id="delete-all">Delete All</button>
 
 </body>
 </html>
